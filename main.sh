@@ -10,7 +10,6 @@ install_packages() {
 	rpm_packages="tar zip unzip openssl openssl-devel lsof git jq socat nginx crontabs make gcc rrdtool rrdtool-perl perl-core spawn-fcgi traceroute zlib zlib-devel wqy-zenhei-fonts"
 	apt_packages="tar zip unzip openssl libssl-dev lsof git jq socat nginx cron make gcc rrdtool librrds-perl spawn-fcgi traceroute zlib1g zlib1g-dev fonts-droid-fallback"
 	if [[ $ID == "debian" || $ID == "ubuntu" ]]; then
-		$PM update
 		$INS wget curl gnupg2 ca-certificates dmidecode lsb-release
 		update-ca-certificates
 		echo "deb http://nginx.org/packages/$ID $(lsb_release -cs) nginx" | tee /etc/apt/sources.list.d/nginx.list
