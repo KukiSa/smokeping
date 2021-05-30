@@ -24,6 +24,3 @@ bash -c "$(curl -L https://github.com/jiuqi9997/smokeping/raw/main/main.sh)"
 ## 配置
 脚本自动为 SmokePing 进行配置，可以自行按需修改。
 SmokePing 主配置文件（包括目标节点）为 `/usr/local/smokeping/etc/config`，此文件的结构及其修改请查阅相关教程，附上[示例](https://oss.oetiker.ch/smokeping/doc/smokeping_examples.en.html)。
-
-## FAQ
-参见[常见问题](https://github.com/jiuqi9997/smokeping/blob/main/faq.md)。
